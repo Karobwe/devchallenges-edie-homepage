@@ -3,12 +3,237 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport"/>
-    <link href="devchallenges.png" rel="icon"/>
+    <link href="./build/images/devchallenges.png" rel="icon"/>
     <link href="https://devchallenges.io/" rel="shortcut icon" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
-    <title>Devchallenges</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/app.css">
+    <script src="./build/app.js"></script>
+    <title>Edie's Homepage by Karobwe | Devchallenges</title>
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container">
+        <header>
+            <nav class="menu">
+                <a href="#" class="menu__brand">Edie</a>
+
+                <button class="menu__toggle">
+                    <span class="material-icons">menu</span>
+                </button>
+
+                <ul class="menu__collapse">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#services" class="menu__link">Services</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#works" class="menu__link">Our works</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#clients" class="menu__link">Clients</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contact" class="menu__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="hero">
+                <h5 class="hero__subtitle">Unhappy with your website?</h5>
+
+                <h1 class="hero__title">We create beautiful and fast web services</h1>
+
+                <img src="./build/images/heroImage.jpg" alt="">
+
+                <div class="hero__content">
+                    <h2 class="hero__content__title">Story, emotion and purpose</h2>
+
+                    <div class="hero__content__body">
+                        <p>We help transform your ideas into real world
+                            applications that will outperform your toughest
+                            competition and help you achieve your strategic
+                            goals in short period of time.
+                        </p>
+
+                        <form action="#" id="contact" class="hero__contact">
+                            <p>Want us to contact you?</p>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Email">
+                            <button>Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="services">
+                <h3 class="section__title">We offer high demand services</h3>
+
+                <div class="services__cards__container">
+                    <div class="service__card">
+                        <div class="service__card__icon material-icons">create</div>
+
+                        <h4 class="card__title">UI/UX Design</h4>
+
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis a metus ac nulla consequat aliquet id quis turpis.
+                        </p>
+
+                        <a href="" class="card__cta">Get started</a>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__card__icon material-icons">code</div>
+
+                        <h4 class="card__title">Front End</h4>
+
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+                        </p>
+
+                        <a href="" class="card__cta">Get started</a>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__card__icon material-icons">storage</div>
+
+                        <h4 class="card__title">Back End</h4>
+
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+                        </p>
+
+                        <a href="" class="card__cta">Get started</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="works">
+                <h3 class="section__title">Good design means good business</h3>
+
+                <div class="works__container">
+                    <figure class="work__card">
+                        <div class="work__card__picture__container">
+                            <img src="./build/images/smarthome.jpg" alt="" class="work__ward__picture">
+                        </div>
+
+                        <figcaption>
+                            <div class="work__card__category">Full stack application</div>
+                            <div class="work__card__title">Smart home dashboard</div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="work__card">
+                        <div class="work__card__picture__container">
+                            <img src="./build/images/onboard.png" alt="" class="work__ward__picture">
+                        </div>
+
+                        <figcaption>
+                            <div class="work__card__category">UX/UI design</div>
+                            <div class="work__card__title">Onboard application</div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="work__card">
+                        <div class="work__card__picture__container">
+                            <img src="./build/images/booking.png" alt="" class="work__ward__picture">
+                        </div>
+
+                        <figcaption>
+                            <div class="work__card__category">Mobile application</div>
+                            <div class="work__card__title">Booking system</div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="work__card">
+                        <div class="work__card__picture__container">
+                            <img src="./build/images/juice-product.png" alt="" class="work__ward__picture">
+                        </div>
+
+                        <figcaption>
+                            <div class="work__card__category">Front End applicati on</div>
+                            <div class="work__card__title">Juice product homepage</div>
+                        </figcaption>
+                    </figure>
+
+                    <a href="" class="works__more">see more</a>
+                </div>
+            </section>
+
+            <section id="clients">
+                <div class="clients__team">
+                    <div class="client__team__content">
+                        <h5 class="clients__subtitle">Meet the team</h5>
+
+                        <h3 class="section__title">We are chilled and a laidback team</h3>
+
+                        <p class="client__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                    <div class="clients__team__members">
+                        <img src="./build/images/person3.png" alt="" class="client__team__member">
+                        <img src="./build/images/person1.png" alt="" class="client__team__member">
+                        <img src="./build/images/person2.png" alt="" class="client__team__member">
+                    </div>
+                </div>
+
+                <div class="clients__testimonial">
+                    <p class="client__quote">
+                        “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+                    </p>
+
+                    <div class="client__card">
+                        <img src="./build/images/person4.png" alt="" class="client__picture">
+                        <div class="client__name">Carlos Tran</div>
+                        <div class="client__title">The Decorate Gatsby</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer__links">
+                <nav class="footer__menu"></nav>
+
+                <div class="footer__network">
+                    <a href="#" class="footer__network__website">Edie</a>
+                    <div class="footer__network__social">
+                        <a href="#" class="network__social__link">
+                            <img src="./build/images/instagram.svg" alt="">
+                        </a>
+                        
+                        <a href="#" class="network__social__link">
+                            <img src="./build/images/linkedin.svg" alt="">
+                        </a>
+                        
+                        <a href="#" class="network__social__link">
+                            <img src="./build/images/twitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <form action="" class="footer__contact">
+                    <p>Want us to contact you?</p>
+                    <label for="email2" aria-hidden="true">Email</label>
+                    <input type="text" id="email2" placeholder="Email">
+                    <button>Join</button>
+                </form>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    created by
+                    <a href="https://github.com/Karobwe">Karobwe</a> -
+                    <a href="https://devchallenges.io/paths/responsive-web-developer">
+                        devChallenges.io
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
