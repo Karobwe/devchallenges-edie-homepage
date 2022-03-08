@@ -1,0 +1,11 @@
+@import "../utils";
+
+body {
+  color: $gray1;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $gray1;
+}
