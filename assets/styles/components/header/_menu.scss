@@ -1,0 +1,69 @@
+@import "../../utils";
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  // color on mobile
+  .menu__toggle {
+    position: absolute;
+    right: em(12px);
+    border: none;
+    background: none;
+    z-index: 101;
+
+    @include media-gte-lg {
+      display: none;
+    }
+  }
+
+  .menu__collapse {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    opacity: 0;
+    visibility: hidden;
+    animation: openingMenuAnimation 300ms ease-in-out;
+
+    @include media-gte-lg {
+      display: flex;
+    }
+  }
+
+  .menu__collapse.opened {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+
+    opacity: 1;
+    visibility: visible;
+
+    .menu__link {
+      color: $white;
+    }
+  }
+}
+
+@keyframes openingMenuAnimation {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}

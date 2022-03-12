@@ -1,9 +1,10 @@
-@import "assets/styles/utils/index";
+@import "../utils";
 
 .container {
   max-width: 90vw;
+  margin-inline: auto;
 
   @include media-gte-lg {
-    max-width: em(900px);
+    max-width: 95vw;
   }
 }
