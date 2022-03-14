@@ -1,6 +1,7 @@
 @import "../utils";
 
 body {
+  font-family: $font-default;
   font-weight: 400;
   font-size: em(16px);
   line-height: em(24px);
@@ -17,6 +18,7 @@ body {
   line-height: em(36px);
 
   .menu__brand {
+    font-family: $font-primary;
     font-weight: 800;
     font-size: em(24px);
     line-height: em(35px);
@@ -219,6 +221,7 @@ footer {
   }
 
   .copyright {
+    font-family: $font-accent;
     font-weight: 500;
     font-size: em(14px);
     line-height: em(17px);
