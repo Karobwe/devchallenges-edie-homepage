@@ -3,6 +3,9 @@
 .container {
   max-width: 90vw;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(100px);
 
   @include media-gte-lg {
     max-width: 95vw;

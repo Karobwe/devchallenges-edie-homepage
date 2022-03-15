@@ -83,6 +83,18 @@ body {
         line-height: em(21px);
       }
     }
+
+    input,
+    button {
+      font-weight: 500;
+      font-size: rem(14px);
+      line-height: rem(21px);
+
+      @include media-gte-lg {
+        font-size: rem(18px);
+        line-height: rem(27px);
+      }
+    }
   }
 }
 

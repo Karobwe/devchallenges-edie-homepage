@@ -9,7 +9,8 @@
   // color on mobile
   .menu__toggle {
     position: absolute;
-    right: em(12px);
+    padding: 0;
+    right: calc((5vw));
     border: none;
     background: none;
     z-index: 101;
