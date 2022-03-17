@@ -1,0 +1,23 @@
+@import "../../utils";
+@import "work-card";
+
+#works {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(48px);
+
+  .section__title {
+    margin-inline: rem(43px);
+  }
+}
+
+.works__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(36px);
+}
+
+.works__more,
+.works__more:visited {
+  color: $blue;
+}

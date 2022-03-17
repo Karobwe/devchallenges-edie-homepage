@@ -1,0 +1,11 @@
+@import "../../utils";
+
+.work__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.work__card__picture {
+  border-radius: rem(24px);
+  margin-bottom: rem(14px);
+}
