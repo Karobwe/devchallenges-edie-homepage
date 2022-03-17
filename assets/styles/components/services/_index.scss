@@ -1,0 +1,8 @@
+@import "../../utils";
+@import "service-card";
+
+#services {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(92px);
+}

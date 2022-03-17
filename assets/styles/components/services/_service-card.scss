@@ -1,0 +1,68 @@
+@import "../../utils";
+
+.services__cards__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(86px);
+}
+
+.service__card {
+  padding: rem(49px) 0 rem(43px) rem(34px);
+
+  &:nth-child(2) {
+    background: $white;
+    box-shadow: 0 rem(10px) rem(30px) rgba(51, 51, 51, 0.1);
+    border-radius: rem(24px);
+  }
+}
+
+.service__card__icon {
+  width: rem(67px);
+  height: rem(67px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  background-color: $gray2;
+  border-radius: rem(16px);
+
+  &--blue {
+    @extend .service__card__icon;
+    background-color: $blue;
+  }
+
+  &--red {
+    @extend .service__card__icon;
+    background-color: $red;
+  }
+
+  &--green {
+    @extend .service__card__icon;
+    background-color: $green;
+  }
+}
+
+.service__card__title {
+  margin: rem(35px) 0 rem(24px);
+}
+
+.service__card__description {
+  margin-bottom: rem(30px);
+}
+
+.service__card__cta {
+  padding: rem(9px) rem(13px);
+  color: $gray3;
+  background: $gray5;
+  border-radius: rem(12px);
+
+  &--blue {
+    @extend .service__card__cta;
+    color: $white;
+    background-color: $blue;
+
+    &:visited {
+      color: $white;
+    }
+  }
+}

@@ -122,6 +122,12 @@ section {
     }
 
     // .service__card__description inherit body's styles
+
+    .service__card__cta {
+      font-weight: 500;
+      font-size: rem(16px);
+      line-height: rem(24px);
+    }
   }
 
   .work__card {

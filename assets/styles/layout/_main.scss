@@ -1,0 +1,7 @@
+@import "../utils";
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(155px);
+}
