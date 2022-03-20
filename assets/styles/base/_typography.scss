@@ -102,11 +102,11 @@ section {
   .section__title {
     font-weight: 500;
     font-size: em(24px);
-    line-height: em(36px);
+    line-height: em(24px);
 
     @include media-gte-lg {
       font-size: em(36px);
-      line-height: em(54px);
+      line-height: em(36px);
     }
   }
 
@@ -154,7 +154,7 @@ section {
 
     .work__card__title {
       font-size: em(18px);
-      line-height: em(27px);
+      line-height: em(24px);
     }
   }
 
@@ -168,7 +168,7 @@ section {
 
     .section__title {
       font-size: em(36px);
-      line-height: em(54px);
+      line-height: em(24px);
     }
 
     // .client__description inherit body's styles

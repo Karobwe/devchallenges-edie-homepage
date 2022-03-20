@@ -1,0 +1,37 @@
+@import "../../utils";
+
+.clients__testimonial {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(52px);
+}
+
+.client__card {
+  display: grid;
+  column-gap: rem(30px);
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+}
+
+.client__picture__container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.client__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: rem(12px);
+}
+
+.client__card__details {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(12px);
+}

@@ -1,0 +1,9 @@
+@import "../../utils";
+@import "team";
+@import "testimonial";
+
+#clients {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(100px);
+}
