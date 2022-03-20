@@ -30,39 +30,4 @@
     row-gap: rem(32px);
   }
 
-  .hero__contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: rem(8px);
-
-    p {
-      flex-shrink: 0;
-      width: 100%;
-    }
-
-    .form-group {
-      background-color: $gray6;
-      border-radius: rem(12px);
-      padding: rem(4px) rem(4px) rem(4px) rem(20px);
-
-      // TODO: remove outline on focus and simulate the effect on .form-group
-      #email {
-        background-color: transparent;
-        border: none;
-      }
-
-      // TODO: disable submit on click
-      button {
-        min-width: rem(72px);
-        height: rem(40px);
-        color: $white;
-        background-color: $blue;
-        border: none;
-        border-radius: rem(12px);
-      }
-    }
-
-  }
-
 }
