@@ -20,15 +20,17 @@
     border-radius: rem(12px);
     padding: rem(4px) rem(4px) rem(4px) rem(20px);
 
-    // TODO: remove outline on focus and simulate the effect on .form-group
     #email,
     #email2 {
       flex: 1 1 auto;
       background-color: transparent;
       border: none;
+
+      &:focus {
+        outline: none;
+      }
     }
 
-    // TODO: disable submit on click
     button {
       flex: 1 0 rem(72px);
       max-width: rem(72px);
@@ -37,6 +39,11 @@
       background-color: $blue;
       border: none;
       border-radius: rem(12px);
+      transition: background-color 300ms ease;
+
+      &:hover {
+        background-color: darken($blue, 10%);
+      }
     }
   }
 }

@@ -53,16 +53,26 @@
 .service__card__cta {
   padding: rem(9px) rem(13px);
   color: $gray3;
-  background: $gray5;
+  background-color: $gray5;
   border-radius: rem(12px);
+  transition: background-color 300ms ease;
+
+  &:hover {
+    background-color: darken($gray5, 10%);
+  }
 
   &--blue {
     @extend .service__card__cta;
     color: $white;
     background-color: $blue;
+    transition: background-color 300ms ease;
 
     &:visited {
       color: $white;
+    }
+
+    &:hover {
+      background-color: darken($blue, 10%);
     }
   }
 }
