@@ -30,7 +30,11 @@
     animation: openingMenuAnimation 300ms ease-in-out;
 
     @include media-gte-lg {
+      opacity: 1;
+      visibility: visible;
       display: flex;
+      align-items: center;
+      column-gap: rem(42px);
     }
   }
 
