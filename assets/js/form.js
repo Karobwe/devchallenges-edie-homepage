@@ -17,6 +17,8 @@ export default function() {
             e.preventDefault();
 
             // TODO: show an alert saying that form was submitted successfully
+            let overlay = document.querySelector('.overlay');
+            overlay.classList.add('opened');
 
             document.querySelectorAll('form').forEach(form => {
                 form.reset();
