@@ -6,6 +6,12 @@
 }
 
 .work__card__picture {
-  border-radius: rem(24px);
   margin-bottom: rem(14px);
+  border-radius: rem(24px);
+  filter: grayscale(0.2) opacity(0.9);
+  transition: filter 200ms ease-in;
+
+  &:hover {
+    filter: grayscale(0) opacity(1);
+  }
 }
