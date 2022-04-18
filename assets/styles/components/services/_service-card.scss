@@ -4,10 +4,16 @@
   display: flex;
   flex-direction: column;
   row-gap: rem(86px);
+
+  @include media-gte-lg {
+    flex-direction: row;
+    column-gap: rem(36px);
+  }
 }
 
 .service__card {
   padding: rem(49px) 0 rem(43px) rem(34px);
+  position: relative;
 
   &:nth-child(2) {
     background: $white;
@@ -74,5 +80,18 @@
     &:hover {
       background-color: darken($blue, 10%);
     }
+  }
+}
+
+#finger {
+  display: none;
+  width: rem(64px);
+  fill: $gray4;
+
+  @include media-gte-lg {
+    display: block;
+    position: absolute;
+    right: rem(12px);
+    bottom: rem(-32px);
   }
 }

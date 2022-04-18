@@ -8,6 +8,10 @@ footer {
   color: $white;
   background-color: $dark;
 
+  @include media-gte-lg {
+    padding-inline: rem(60px);
+  }
+
   a, a:visited {
     color: $white;
   }
@@ -19,8 +23,26 @@ footer {
   }
 }
 
+.footer__links {
+  @include media-gte-lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .network {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
 .network__social {
   margin-bottom: rem(64px);
   display: flex;
   column-gap: rem(12px);
+}
+
+.footer__contact {
+  align-content: flex-start;
 }

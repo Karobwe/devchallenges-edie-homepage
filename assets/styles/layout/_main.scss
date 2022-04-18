@@ -4,4 +4,8 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: rem(155px);
+
+  @include media-gte-lg {
+    margin-inline: rem(60px);
+  }
 }

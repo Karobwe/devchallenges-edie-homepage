@@ -15,9 +15,27 @@
   display: flex;
   flex-direction: column;
   row-gap: rem(36px);
+
+  @include media-gte-lg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: rem(20px);
+
+    @include media-gte-lg {
+      position: relative;
+    }
+  }
 }
 
 .works__more,
 .works__more:visited {
   color: $blue;
+
+  @include media-gte-lg {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+  }
 }

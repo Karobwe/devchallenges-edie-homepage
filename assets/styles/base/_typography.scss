@@ -50,7 +50,7 @@ body {
 
     @include media-gte-lg {
       font-size: em(48px);
-      line-height: em(72px);
+      line-height: em(24px);
     }
   }
 
@@ -182,14 +182,19 @@ section {
 
     .client__quote {
       @include media-gte-lg {
-        font-size: em(36px);
-        line-height: em(54px);
+        font-size: em(32px);
+        line-height: em(24px);
       }
     }
 
+    .client__name {
+      font-size: rem(22px);
+      line-height: 1em;
+    }
+
     .client__title {
-      font-size: em(18px);
-      line-height: em(27px);
+      font-size: rem(18px);
+      line-height: 1em;
     }
   }
 }
@@ -210,6 +215,10 @@ footer {
     font-weight: 800;
     font-size: em(36px);
     line-height: em(53px);
+
+    @include media-gte-lg {
+      line-height: 1em;
+    }
   }
 
   .footer__contact {
