@@ -31,8 +31,8 @@
   grid-template-rows: repeat(7, 1fr);
   grid-gap: rem(8px);
 
-  // @TODO Reduce gap (have to redefine grid-template-*, grid-column and grid-row properties for each picture)
-  @include media-gte-lg {
+  // @TODO Reduce gap (have to redefine the grid for tablette and desktop | grid-template-*, grid-column and grid-row properties for each picture)
+  @include media-gte-sm {
     grid-gap: 0;
     row-gap: 4rem;
   }
