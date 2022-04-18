@@ -11,6 +11,10 @@
   column-gap: rem(30px);
   align-items: center;
   grid-template-columns: 1fr 3fr;
+
+  @include media-gte-lg {
+    grid-template-columns: auto 1fr;
+  }
 }
 
 .client__picture__container {
@@ -19,6 +23,11 @@
   width: 100%;
   height: 100%;
   aspect-ratio: 1 / 1;
+
+  @include media-gte-lg {
+    max-width: rem(100px);
+    max-height: rem(100px);
+  }
 }
 
 .client__picture {

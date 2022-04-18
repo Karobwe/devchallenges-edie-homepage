@@ -50,7 +50,7 @@ body {
 
     @include media-gte-lg {
       font-size: em(48px);
-      line-height: em(72px);
+      line-height: em(24px);
     }
   }
 
@@ -182,8 +182,8 @@ section {
 
     .client__quote {
       @include media-gte-lg {
-        font-size: em(36px);
-        line-height: em(54px);
+        font-size: em(32px);
+        line-height: em(24px);
       }
     }
 
@@ -210,6 +210,10 @@ footer {
     font-weight: 800;
     font-size: em(36px);
     line-height: em(53px);
+
+    @include media-gte-lg {
+      line-height: 1em;
+    }
   }
 
   .footer__contact {
