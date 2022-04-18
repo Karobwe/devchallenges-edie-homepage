@@ -4,6 +4,11 @@
   display: flex;
   flex-direction: column;
   row-gap: rem(36px);
+
+  @include media-gte-lg {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .clients__subtitle {
@@ -14,6 +19,10 @@
   .section__title {
     margin: rem(6px) 0 rem(14px);
   }
+
+  @include media-gte-lg {
+    width: 30%;
+  }
 }
 
 .clients__team__members {
@@ -21,6 +30,12 @@
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(7, 1fr);
   grid-gap: rem(8px);
+
+  // @TODO Reduce gap (have to redefine grid-template-*, grid-column and grid-row properties for each picture)
+  @include media-gte-lg {
+    grid-gap: 0;
+    row-gap: 4rem;
+  }
 }
 
 .client__team__member {
