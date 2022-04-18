@@ -187,9 +187,14 @@ section {
       }
     }
 
+    .client__name {
+      font-size: rem(22px);
+      line-height: 1em;
+    }
+
     .client__title {
-      font-size: em(18px);
-      line-height: em(27px);
+      font-size: rem(18px);
+      line-height: 1em;
     }
   }
 }

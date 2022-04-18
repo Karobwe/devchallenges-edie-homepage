@@ -12,7 +12,7 @@
   align-items: center;
   grid-template-columns: 1fr 3fr;
 
-  @include media-gte-lg {
+  @include media-gte-sm {
     grid-template-columns: auto 1fr;
   }
 }
@@ -22,12 +22,9 @@
   grid-row: 1 / 2;
   width: 100%;
   height: 100%;
+  max-height: rem(100px);
+  max-width: rem(100px);
   aspect-ratio: 1 / 1;
-
-  @include media-gte-lg {
-    max-width: rem(100px);
-    max-height: rem(100px);
-  }
 }
 
 .client__picture {
@@ -43,4 +40,8 @@
   display: flex;
   flex-direction: column;
   row-gap: rem(12px);
+}
+
+.client__title {
+  color: $gray3;
 }
